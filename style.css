@@ -1,0 +1,22 @@
+body {
+  background-color: lightblue;
+  font-family: 'Sofia', sans-serif;
+}
+
+h1 {
+  color: red;
+  font-family: arial;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 300px;
+}
+
+p {
+  color: blue;
+  font-size: 18px;
+}
+
+#p1 {
+  font-family: Georgia;
+  border: 1px solid white;
+}
