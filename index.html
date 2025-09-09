@@ -1,76 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--meta datos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fullstack 2025</title>
+    <title>Fullstack 2025 - IA y Sistemas</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google fonts / poppins + space mono-->
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia"
     />
   </head>
 
   <body>
-    <h1>Formación FullStack </h1>
-    <p>Hola!</p>
-    <h2>¡Bienvenido a FullStack 2025!</h2>
-    <p id="p1">Este es un proyecto de ejemplo para el curso de FullStack 2025.</p>
-    <p>La primera parte es utilizar HTML</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-    <div>
-      <h2>Flowers</h2>
-      <img src="./imag/flowers.jpeg" alt="Flowers" width="200" />
-      <p>Una hermosa imagen de flores.</p>
-    </div>
-    <div>
-      <h2>Butterflies</h2>
-      <img src="./imag/butterfly.jpeg" alt="butterfly" width="200" />
-      <p>Una imagen de mariposas.</p>
-    </div>
-    <a href= https://ar.pinterest.com/pin/9218374232293029/ > Pinterest </a>
-    <a href = https://github.com/solopez/htmlcss/blob/main/index.html> Github </a>
-    <a href = https://www.frro.utn.edu.ar> UTN FRRO </a>
-  </body>
-    <header>
-      <nav>
-        <ul>
-          <li> <a href= https://ar.pinterest.com/pin/9218374232293029/ > Pinterest </a> </li>
-          <li><a href = https://github.com/solopez/htmlcss/blob/main/index.html >Github </a> </li>
-          <li><a href = https://www.frro.utn.edu.ar>Utn FRRO</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <!-- cabecera del sitio, con logo y barra de navegacion-->
+      <div class="container">
+        <a class="logo" href="#inicio"> IA y Sistemas</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li class="has-submenu">
+              <a href="#recursos">Recursos</a>
+              <ul class="submenu">
+                <li>
+                  <a
+                    href="https://www.xataka.com/basics/que-inteligencia-artificial-explicacion-sencilla-completa-para-todo-mundo"
+                    >XATAKA ¿Que es IA?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.xataka.com/basics/que-prompt-que-importantes-para-usar-inteligencia-artificial"
+                    >XATAKA Prompts Ia</a
+                  >
+                </li>
+                <li><a href="https://huggingface.co/">Hugging Face</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <form action="#" method="get">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
-      <br />
-      <label for="buscar">Buscar:</label>
-      <input type="text" id="buscar" name="buscar" placeholder="Buscar" />
-      <br />
-      <label for="descripcion">Descripción:</label>
-      <br />
-      <textarea
-        id="descripcion"
-        name="descripcion"
-        placeholder="Escribe una breve descripción"
-      ></textarea>
-      <br />
-      <button type="submit">Buscar</button>
-    </form> 
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container">
+          <h1>Formacion FullStack- IA y Sistemas</h1>
+          <p class="lead">
+            Hola! esto es un Proyectto temàtico para practicar HTML y CSS con
+            estilo moderno
+          </p>
+        </div>
+      </section>
 
-    <footer>
-      <p>&copy; 2024 Fullstack.</p>
+      <section class="section container" id="sobre">
+        <h2>Sobre el proyecto</h2>
+        <p>
+          Este sitio aplica los items del TP con una estetica tech y buenas
+          practicas
+        </p>
+        <p>
+          Encontraras listas, cards con imageners, nav con submenu, formulario y
+          estilos resposivos
+        </p>
+
+        <h2>Pasos para probar la demo</h2>
+        <ol>
+          <li>Explora el menu y el submenu</li>
+          <li>Revisa las cards del laboratorio</li>
+          <li>completa el formulario y envia tus datos</li>
+        </ol>
+
+        <h2>Tecnologias utilizadas</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>TypeScript</li>
+        </ul>
+      </section>
+
+      <section class="section container cards" id="labs">
+        <article class="card">
+          <img src="imag\IA1.webp" alt="IA1" width="300" />
+          <div class="card- body">
+            <h2>Laboratorios de IA</h2>
+            <p>
+              Zona para probar prompts, embeddings y evaluación de respuestas.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imag\desarrollo.jpeg" alt="Desarrollo" width="300" />
+          <div class="card-body">
+            <h2>Herramientas de desarrollo</h2>
+            <p>
+              Stack de utilidades para debug, testing y performance en front.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="links" class="section container">
+        <h2>Enlaces útiles</h2>
+        <p>
+          <a href="https://ar.pinterest.com/pin/9218374232293029/">Pinterest</a>
+          · <a href="https://github.com/luciabolcatto"> Mi GitHub</a> ·
+          <a href="https://www.frro.utn.edu.ar">UTN FRRO</a>
+        </p>
+      </section>
+
+      <section id="contacto" class="section container">
+        <h2>Contacto</h2>
+        <form action="#" method="get">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+          />
+          <br />
+          <label for="buscar">Buscar:</label>
+          <input type="text" id="buscar" name="buscar" placeholder="Buscar" />
+          <br />
+          <label for="descripcion">Descripción:</label>
+          <br />
+          <textarea
+            id="descripcion"
+            name="descripcion"
+            placeholder="Escribe una breve descripción"
+          ></textarea>
+          <br />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Fullstack.</p>
+      </div>
     </footer>
+  </body>
+</html>
 
-
-    
-    <!--
+<!--
 
 Ejercicios <3
 
@@ -169,5 +248,3 @@ Ejemplos: @media screen and (min-width: 768px) {}
 
 
 -->
-  </body>
-</html>

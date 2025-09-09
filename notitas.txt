@@ -1,0 +1,68 @@
+
+HTML: 
+<href="#incio">  referencium a un elemento con id incio dentro de la pagina  -->> navegacion interna
+<head> --> metadatos
+<header> --> cabecera del sitio, con logo y barra de navegacion
+<div class= "container"> --> contenedor que centra y limita el ancho de los elementos
+<a class= "logo" href = "#inicio"> --> logo del sitio o titulo
+<nav> + <ul><li><a>> -->barra de navegacion con links de enlace
+<main> --> contenedor principal del sitio
+
+<SECTION> AGRUPA ELEMENTOS DE UN TIPO   VS <ARTICLE> contenido independiente como una card con imagen y texto
+<section class= "hero"> --> seccion inicial 
+<section class ="section container" id="sobre" > --> seccion decriptiva sobre el proyecto
+<section class= "cards"< --> seccion con tarjetas <articule class="card">
+<section id= "links"> --> seccion con enlaces externos
+<section id= "contacto"> --> seccion con formulario de contacto
+<footer> --> pie de pagina
+<TEXTAREA> "input mas grande" para formularios
+<FORM> para formularios
+
+crucial que cada <input> tenga un <label> asociado con el atributo for="id_del_input" para accesibilidad.
+class para estilos repetidos (card, card-body).
+id para identificadores únicos, útiles para links internos y CSS específico (id="inicio")
+
+header, footer,nav, podria hacerlos aparte para reutilizarlos
+
+
+
+CSS: 
+en css si uso # para referenciar a un elemento con id y agrego estilos a ese elemento
+---------------
+EXTRAS
+--------------
+RESET BASICO PARA TODOS LOS nav  
+* selecciona todos los elementos de la pag 
+quita los estilos por defecto de los navegadores.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; --> me incluye bordes a los tamaños de los elementos
+}
+---------------
+
+Selectores:
+
+      .card-body → selecciona cualquier elemento con esa clase.
+
+      #inicio → selecciona un elemento con id inicio.
+
+      div > p → selecciona solo párrafos hijos directos de div.
+
+---------------------------------------------------
+OCULTAR EL SUBMENU
+con display: none y display: block al pasar el mouse
+----------------------------------------------------
+flex-wrap: wrap; permite que las cards bajen a otra línea si la pantalla es pequeña.
+-------------------------------------------------
+
+
+line-height: 1.6; /* "interlineado" */
+margin-inline: auto;     /* centra horizontalmente */
+width: min(1100px, 92%); /* Máximo 1100px, si no ocupa 92% */
+background: linear-gradient(90deg, #0d1117, #1f2937); /* gradiente  da transicion visual suave*/
+------------
+¿?
+----------
+usar variables en los estilos/colores es mejor practica ?
+article mala practica ? ?
